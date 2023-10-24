@@ -1,0 +1,169 @@
+/* Style for the entire form */
+
+.Form-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  width: 300px;
+  margin-left: 33.3%;
+}
+
+.Form-submit label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.Form-submit select {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.Form-submit button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Form-submit button:hover {
+  background-color: #0056b3;
+}
+
+  
+
+/* Style for the entire table */
+.Table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  
+  /* Style for table headers (th) */
+  .Table th {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style for table cells (td) */
+  .Table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  /* Add hover effect to rows */
+  .Table tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+
+
+/* Style for table cells (td) that contain images */
+.Table td img.Img {
+    max-width: 100px; /* Limit the image width */
+    max-height: 100px; /* Limit the image height */
+    display: block; /* Remove any extra space around the image */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+  /* back button */
+  .top-left-button {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    background-color: #0074d9; /* Background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .top-left-button:hover {
+    background-color: #0056b3; /* Change color on hover */
+  }
+
+  .arrow{
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-left: 5px;
+  }
+
+  .Table .breedbutton{
+    cursor: pointer;
+  }
+
+  .Table .breedbutton:hoover{
+    background-color: #0056b3; /* Change color on hover */
+
+  }
+
+  /* find match button styling */
+  .FindMatch {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+  
+  .FindMatch:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+.Fontstyle{
+  text-align: left;
+}  
+
+.Fontstyle span{
+  font-weight: bold;
+}
+
+/* uncheck button */
+.unckeckbutton {
+  background-color: #ff6347; /* Background color */
+  color: #fff; /* Text color */
+  padding: 8px 16px; /* Padding around the text */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  font-weight: bold; /* Make the text bold */
+}
+
+.unckeckbutton:hover {
+  background-color: #cf624e; /* Change background color on hover */
+}
+
+/* pagination button styling */
+.pagination button{
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 8px;
+}
+
+.pagination button:hoover{
+  background-color: #0056b3;
+}

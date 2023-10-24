@@ -1,0 +1,220 @@
+//<Login />
+
+isLoggedIn={isLoggedIn}
+
+<Route path="/search" element={<PrivateRoute> <Search />  </PrivateRoute>} isLoggedIn={isLoggedIn} />
+
+import React from 'react';
+import { Route, Navigate } from 'react-router-dom';
+
+const PrivateRoute = ({ element, isLoggedIn }) => {
+  return isLoggedIn ? element : <Navigate to="/" />;
+};
+
+export default PrivateRoute;
+
+
+return (
+        <>
+        <div>
+        <form onSubmit={handleSubmit}>
+            <button type="submit">Search</button>
+        </form>
+        <p>{breeds}</p>
+        </div>
+        </>
+    )
+
+
+//////////////////
+<p>Search Results:</p>
+        <ul>
+         {searchResults.map((dogId) => (
+            <li key={dogId}>{dogId}</li>
+          ))}
+          
+        </ul>
+   
+ <ul>
+        {dogDetails.map((dog) => (
+            <li key={dog.id}>
+              Dog ID: {dog.id}
+              <br />
+              Name: {dog.name}
+              <br />
+              Breed: {dog.breed}
+              <br />
+              Age: {dog.age}
+              <br />
+              Zip Code: {dog.zip_code}
+            </li>
+          ))}
+          
+        </ul>
+
+//check box
+onClick={addToFavorites(dog.id, this.checked)}
+
+setFavDogs((prevFavDogs) => {
+          if (checked) {
+            // Add the ID to the favorites list
+            return [...prevFavDogs, id];
+          } else {
+            // Remove the ID from the favorites list
+            return prevFavDogs.filter((dogId) => dogId !== id);
+          }
+        });
+
+        console.log(favDogs)
+
+
+
+     // Determine whether to show the "Next" button
+    //const showNextButton = (searchResults.length <= resultsPerPage);
+    //console.log("hello", showNextButton);
+
+     => setSelectedBreed(e.target.value)
+
+     <option value="">--- All Breeds ---</option>
+
+        <p>Hello</p>
+        <h2>{props.match}</h2>
+match.jsx
+      <ul>
+            {yourDog ? ( // Check if yourDog is defined
+            <>
+                <li>Name: {yourDog[0].name}</li>
+                <li>Breed: {yourDog[0].breed}</li>
+                <li>Age: {yourDog[0].age}</li>
+                <li>Zip Code: {yourDog[0].zip_code}</li>
+            </>
+            ) : (
+            <li>Loading...</li>
+            )}
+        </ul>
+
+ <tr>
+                <td>City</td>
+                <td>{location ? location.city : 'Loading...'}</td>
+            </tr>
+      
+      
+.MatchBox ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.MatchBox li {
+  margin-bottom: 10px;
+}
+
+
+<table className="Table">
+       
+            <tbody>
+                <tr>
+                    <td>Name </td>
+                    <td>{yourDog[0].name}</td>
+                </tr>
+                <tr>
+                    <td>Breed</td>
+                    <td>{yourDog[0].breed}</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>{yourDog[0].age}</td>
+                </tr>
+                <tr>
+                    <td>Zip Code</td>
+                    <td>{yourDog[0].zip_code}</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        /* Style for the entire form */
+.Form-submit { 
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  /* Style for the label */
+  .Form-submit label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  /* Style for the select input */
+  .Form-submit select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Style for the search button */
+  .Form-submit button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  /* Hover effect for the search button */
+  .Form-submit button:hover {
+    background-color: #0056b3;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+
+  .App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
