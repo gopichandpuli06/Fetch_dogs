@@ -5,7 +5,7 @@ import "./Login.css"
 
 const baseURL = "https://frontend-take-home-service.fetch.com";
 
-export const Login = ( { setIsLoggedIn } ) =>{
+export const Login = () =>{
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const navigate = useNavigate(); // Initialize useHistory
@@ -20,7 +20,7 @@ export const Login = ( { setIsLoggedIn } ) =>{
         })
         .then((response) =>{
             if (response.status === 200) {
-                setIsLoggedIn(true); // Set the login status to true
+                //setIsLoggedIn(true); // Set the login status to true
                 navigate('/search'); 
             }
         })

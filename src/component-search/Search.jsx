@@ -31,7 +31,6 @@ export const Search = () =>{
       })
       .catch((error) => {
         if(error.response.status === 401){
-          console.log(error.response.status)
           navigate("/");
         }
         console.error("GET Request Error1:", error);
@@ -111,14 +110,12 @@ export const Search = () =>{
 
     // Handle pagination
     const nextPage = (e) => {
-        console.log(e);
         e.preventDefault();
         setCurrentPage(currentPage+1);
     };
 
     const prevPage = (e) => {
         e.preventDefault();
-        console.log(e);
         if (currentPage > 1) {
             setCurrentPage(currentPage - 1);
         }
@@ -208,21 +205,22 @@ export const Search = () =>{
           </select>
           <button type="submit">Search</button>
         </form>
-        <p>Search Results:</p>
         <button className="FindMatch" onClick={findMatch}>Find your match</button> {/*find the match function */}
         <ul className="Fontstyle">
           <li>Please select your favorite dogs from the table below. Use the 'Next' and 'Previous' 
               buttons below the table to navigate to other pages.</li>
           <li>After selecting your favorite dogs, 
         click the <span>'Find your match'</span> button above to view your matched dog and its details.</li>
+        <li>Favorites will persist across breed searches, to uncheck favorites click here {`->`} &nbsp;
+        <button className="unckeckbutton" onClick={clearChecked}>Uncheck All</button>
+        </li>
         </ul>
         
         <table className="Table">
               
             <thead>
                 <tr>
-                <th><button className="unckeckbutton" onClick={clearChecked}>Uncheck Favorites</button></th>
-                <th>Favorites</th> {/* Clear the checked list */}
+                <th className="favoritesheader">Favorites</th> {/* Clear the checked list */}
                 {/*<th>Dog ID</th> */}
                 <th>Name</th>
                 <th className="breedbutton" onClick={sort}>
@@ -231,13 +229,12 @@ export const Search = () =>{
                 </th>
                 <th>Age</th>
                 <th>Zip Code</th>
-                <th>Image</th>
+                <th className="tableheader2">Image</th>
                 </tr>
             </thead>
             <tbody>
                 {dogDetails.map((dog) => (
                 <tr key={dog.id}>
-                  <td></td>
                     <td><input type="checkbox" 
                         checked={checkFav(dog.id)} 
                         onChange={(e) => addToFavorites(dog.id, e.target.checked)}/>  {/* passing the checked and unchecked id's to the function*/}

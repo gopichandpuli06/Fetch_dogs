@@ -4,14 +4,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 0;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
   width: 300px;
-  margin-left: 33.3%;
+  margin-left: 33.36%;
 }
 
 .Form-submit label {
@@ -50,6 +50,7 @@
     border-collapse: collapse;
     margin-top: 20px;
     margin-left: 30px;
+    
   }
   
   /* Style for table headers (th) */
@@ -58,6 +59,11 @@
     color: #fff;
     padding: 10px;
     text-align: left;
+    text-align: center;
+  }
+
+  .favoritesheader {
+    width: 100px;
   }
   
   /* Style for table cells (td) */
@@ -65,6 +71,14 @@
     padding: 10px;
     border: 1px solid #ddd;
     background-color: #f9f9f9;
+  }
+
+  .Table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .Table tr:nth-child(odd) {
+    background-color: #fff;
   }
   
   /* Add hover effect to rows */
@@ -86,7 +100,7 @@
     position: absolute;
     top: 30px;
     left: 50px;
-    background-color: #0074d9; /* Background color */
+    background-color: #007bff; /* Background color */
     color: #fff; /* Text color */
     border: none;
     border-radius: 4px;
@@ -100,29 +114,32 @@
   }
 
   .arrow{
-    width: 20px;
-    height: 20px;
-    color: white;
-    margin-left: 5px;
+    margin-top: 6px;
+    width: 15px;
+    height: 15px;
+    margin-left: 4px;
   }
 
   .Table .breedbutton{
     cursor: pointer;
+    background-color: #007BFF;
   }
 
-  .Table .breedbutton:hoover{
+  .Table .breedbutton:hover{
     background-color: #0056b3; /* Change color on hover */
 
   }
 
   /* find match button styling */
   .FindMatch {
+    margin-top: 20px;
     background-color: #007bff; /* Blue background color */
     color: #fff; /* Text color */
     padding: 10px 20px; /* Padding around the text */
     border: none; /* Remove button border */
     border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Add a pointer cursor on hover */
+    cursor: pointer; 
+    font-size: 16px;
   }
   
   .FindMatch:hover {
@@ -138,17 +155,20 @@
 
 /* uncheck button */
 .unckeckbutton {
-  background-color: #ff6347; /* Background color */
-  color: #fff; /* Text color */
-  padding: 8px 16px; /* Padding around the text */
-  border: none; /* Remove border */
-  border-radius: 4px; /* Rounded corners */
-  cursor: pointer; /* Add a pointer cursor on hover */
-  font-weight: bold; /* Make the text bold */
+  background-color: #007BFF; /* Background color */
+  color: #fff; 
+  padding: 5px 12px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  margin-right: 10px;
+  font-size: 16px;
+  margin-top: 3px;
 }
 
+
 .unckeckbutton:hover {
-  background-color: #cf624e; /* Change background color on hover */
+  background-color: #0056b3; /* Change background color on hover */
 }
 
 /* pagination button styling */
@@ -162,8 +182,9 @@
   margin-top: 20px;
   margin-bottom: 40px;
   padding: 8px;
+  border-radius: 5px;
 }
 
-.pagination button:hoover{
+.pagination button:hover{
   background-color: #0056b3;
 }
