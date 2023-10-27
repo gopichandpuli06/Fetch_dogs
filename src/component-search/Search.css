@@ -14,6 +14,7 @@
   margin-left: 33.36%;
 }
 
+
 .Form-submit label {
   font-size: 16px;
   margin-bottom: 5px;
@@ -41,7 +42,6 @@
 .Form-submit button:hover {
   background-color: #0056b3;
 }
-
   
 
 /* Style for the entire table */
@@ -58,13 +58,9 @@
     background-color: #007BFF;
     color: #fff;
     padding: 10px;
-    text-align: left;
     text-align: center;
   }
 
-  .favoritesheader {
-    width: 100px;
-  }
   
   /* Style for table cells (td) */
   .Table td {
@@ -89,19 +85,62 @@
 
 /* Style for table cells (td) that contain images */
 .Table td img.Img {
-    max-width: 100px; /* Limit the image width */
-    max-height: 100px; /* Limit the image height */
-    display: block; /* Remove any extra space around the image */
+    max-width: 100px; 
+    max-height: 100px; 
+    display: block; 
     margin: 0 auto; /* Center the image horizontally */
   }
   
+  /* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .Form-submit {
+    width: 200px;
+    margin-left: 33.3%;
+    margin-right: 33.3%;
+  }
+  .Table {
+      margin-left: 0;
+  }
+  
+  .favoritesheader {
+      display: none; /* Hide the "favoritesheader" column on smaller screens */
+  }
+  
+  .Table th, .Table td {
+      padding: 5px;
+  }
+  
+  .Table td img.Img {
+      max-width: 80px;
+      max-height: 80px;
+  }
+
+  .top-left-button{
+    top: 40px;
+    left: 40px;
+    padding: 8px 15px;
+  }
+
+  .FindMatch{
+    padding: 8px 15px;
+    margin-left: 33.3%;
+    margin-right: 33.3%;
+  }
+
+  .Fontstyle{
+    text-align: left;
+    font-size: 12px;
+  }
+}
+
+
   /* back button */
   .top-left-button {
     position: absolute;
-    top: 30px;
-    left: 50px;
-    background-color: #007bff; /* Background color */
-    color: #fff; /* Text color */
+    top: 40px;
+    left: 80px;
+    background-color: #007bff; 
+    color: #fff; 
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
@@ -110,7 +149,7 @@
   }
 
   .top-left-button:hover {
-    background-color: #0056b3; /* Change color on hover */
+    background-color: #0056b3; 
   }
 
   .arrow{
@@ -126,25 +165,29 @@
   }
 
   .Table .breedbutton:hover{
-    background-color: #0056b3; /* Change color on hover */
+    background-color: #0056b3; 
 
   }
 
   /* find match button styling */
   .FindMatch {
     margin-top: 20px;
-    background-color: #007bff; /* Blue background color */
-    color: #fff; /* Text color */
+    background-color: #007bff;
+    color: #fff;
     padding: 10px 20px; /* Padding around the text */
     border: none; /* Remove button border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; 
     font-size: 16px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
   }
   
   .FindMatch:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
   }
+
+
 .Fontstyle{
   text-align: left;
 }  
@@ -153,9 +196,11 @@
   font-weight: bold;
 }
 
+
+
 /* uncheck button */
 .unckeckbutton {
-  background-color: #007BFF; /* Background color */
+  background-color: #007BFF; 
   color: #fff; 
   padding: 5px 12px; 
   border: none; 
@@ -168,7 +213,7 @@
 
 
 .unckeckbutton:hover {
-  background-color: #0056b3; /* Change background color on hover */
+  background-color: #0056b3; 
 }
 
 /* pagination button styling */

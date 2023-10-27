@@ -12,12 +12,20 @@
 
 
 .header {
-  font-size: 35px; /* Adjust the font size as needed */
-  color: #333; /* Change the text color to your preference */
-  padding: 20px; /* Add some padding for spacing */
+  font-size: 35px; 
+  color: #333; 
+  padding: 20px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: cursive;
+}
+
+@media(max-width: 768px){
+  .header{
+    display: flex;
+    font-size: 20px;
+    color:black;
+  }
 }

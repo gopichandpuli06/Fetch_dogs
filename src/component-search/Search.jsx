@@ -220,7 +220,7 @@ export const Search = () =>{
               
             <thead>
                 <tr>
-                <th className="favoritesheader">Favorites</th> {/* Clear the checked list */}
+                <th>Favorites</th> {/* Clear the checked list */}
                 {/*<th>Dog ID</th> */}
                 <th>Name</th>
                 <th className="breedbutton" onClick={sort}>

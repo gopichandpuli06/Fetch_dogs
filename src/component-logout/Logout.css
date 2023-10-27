@@ -12,5 +12,13 @@
 }
 
 .logoutbutton:hover{
-    background-color: #0056b3; /* Change color on hover */
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .logoutbutton {
+        top: 40px;
+        right: 40px;
+        padding: 8px 15px;
+    }
 }

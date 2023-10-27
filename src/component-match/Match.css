@@ -2,7 +2,7 @@
 .MatchBox {
   border: 1px solid #ddd;
   padding: 20px;
-  margin: 100px;
+  margin: 60px;
   display: inline-block;
   box-shadow: 0px 0px 5px #aaa;
   background-color: #f9f9f9;;
@@ -14,7 +14,7 @@
 }
 
 .MatchBox table {
-    margin: 0 auto; /* Center the table horizontally */
+    margin: 0 auto; 
   }
 /* table  css*/
   .DetailsTable {
