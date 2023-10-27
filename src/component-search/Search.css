@@ -90,48 +90,6 @@
     display: block; 
     margin: 0 auto; /* Center the image horizontally */
   }
-  
-  /* Media query for screens smaller than 768px */
-@media (max-width: 768px) {
-  .Form-submit {
-    width: 200px;
-    margin-left: 33.3%;
-    margin-right: 33.3%;
-  }
-  .Table {
-      margin-left: 0;
-  }
-  
-  .favoritesheader {
-      display: none; /* Hide the "favoritesheader" column on smaller screens */
-  }
-  
-  .Table th, .Table td {
-      padding: 5px;
-  }
-  
-  .Table td img.Img {
-      max-width: 80px;
-      max-height: 80px;
-  }
-
-  .top-left-button{
-    top: 40px;
-    left: 40px;
-    padding: 8px 15px;
-  }
-
-  .FindMatch{
-    padding: 8px 15px;
-    margin-left: 33.3%;
-    margin-right: 33.3%;
-  }
-
-  .Fontstyle{
-    text-align: left;
-    font-size: 12px;
-  }
-}
 
 
   /* back button */
@@ -233,3 +191,52 @@
 .pagination button:hover{
   background-color: #0056b3;
 }
+
+  /* Media query for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .Form-submit {
+      width: 150px;
+      margin-left: 33.3%;
+      margin-right: 33.3%;
+    }
+
+    .Form-submit button{
+      padding: 5px 8px;
+    }
+
+    .unckeckbutton{
+      padding: 5px 8px;
+    }
+    .Table {
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+    
+    
+    .Table th, .Table td {
+        padding: 5px;
+        font-size: small;
+    }
+    
+    .Table td img.Img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+  
+    .top-left-button{
+      top: 40px;
+      left: 40px;
+      padding: 5px 8px;
+    }
+  
+    .FindMatch{
+      padding: 5px 8px;
+      margin-left: 33.3%;
+      margin-right: 33.3%;
+    }
+  
+    .Fontstyle{
+      text-align: left;
+      font-size: 12px;
+    }
+  }
